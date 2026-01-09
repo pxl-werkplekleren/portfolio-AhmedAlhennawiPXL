@@ -87,6 +87,106 @@ nav a:hover::after {
 }
 
 
+.home-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.6);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+}
+
+.link-buttons {
+    display: flex;
+    gap: 12px;
+}
+.linkedin-link,
+.cv-link {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedin-link {
+    background: linear-gradient(135deg, #0a66c2, #004182);
+    box-shadow: 0 12px 30px rgba(10,102,194,0.5);
+}
+
+.cv-link {
+    background: linear-gradient(135deg, #34d399, #059669);
+    box-shadow: 0 10px 25px rgba(5,150,105,0.45);
+}
+
+.linkedin-link:hover,
+.cv-link:hover {
+    transform: translateY(-4px);
+}
+
+
+.home-right {
+    text-align: left;
+}
+
+.profile-name {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.profile-role {
+    font-size: 1.15rem;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 24px;
+}
+
+.profile-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 600px;
+    opacity: 0.95;
+}
+
+
+.card {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff, #eef2ff);
+    padding: 32px;
+    border-radius: 22px;
+    margin-bottom: 32px;
+    border-left: 8px solid #4f46e5;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.45s cubic-bezier(.2,.8,.2,1);
+}
+
+.card.hover:hover {
+    transform: translateY(-14px) scale(1.015);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.22);
+}
+
+.card p {
+    margin-bottom: 14px;
+}
+
+strong {
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+
+
+
 
 
 
